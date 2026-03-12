@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "npm run generate:blogs && vite build",
+        "build": "vite build",
         "preview": "vite preview",
         "predeploy": "npm run build && copy dist\\index.html dist\\404.html",
         "deploy": "npx gh-pages -d dist -b gh-pages"
