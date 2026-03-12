@@ -1,0 +1,127 @@
+/* theme.css */
+/* Passion4Profession Blog Theme - Modern Writing and Knowledge Notes */
+
+:root {
+    /* Base backgrounds */
+    --color-bg: #071018;
+    --color-surface: #0d1721;
+    --color-surface-2: #13202c;
+    --color-surface-3: #1a2a38;
+
+    /* Brand / primary */
+    --color-primary: #7dd3fc;
+    --color-primary-hover: #38bdf8;
+    --color-accent: #93c5fd;
+
+    /* Typography */
+    --color-text-primary: #f8fafc;
+    --color-text-secondary: #dbe7f3;
+    --color-text-muted: #94a3b8;
+    --color-text-inverse: #071018;
+
+    /* Optional aliases for old usage */
+    --color-text: var(--color-text-secondary);
+    --color-heading: var(--color-text-primary);
+
+    /* Borders */
+    --color-border: #233446;
+    --color-border-light: #31475d;
+    --color-border-strong: #45607b;
+
+    /* Links */
+    --color-link: #7dd3fc;
+    --color-link-hover: #bae6fd;
+
+    /* States */
+    --color-success: #86efac;
+    --color-error: #fca5a5;
+    --color-warning: #fcd34d;
+    --color-info: #93c5fd;
+
+    /* Code blocks */
+    --color-code-bg: #0a141d;
+    --color-code-border: #233446;
+    --color-code-text: #e6f1fb;
+
+    /* UI helpers */
+    --color-overlay: rgba(7, 16, 24, 0.72);
+    --color-shadow: rgba(0, 0, 0, 0.36);
+    --color-selection-bg: rgba(125, 211, 252, 0.24);
+    --color-selection-text: #ffffff;
+
+    /* Radius */
+    --radius-xs: 6px;
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+
+    /* Spacing */
+    --space-2xs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+
+    /* Layout */
+    --container-width: 1280px;
+    --content-width: 1440px;
+    --header-height: 72px;
+
+    /* Transitions */
+    --transition-fast: 180ms ease;
+    --transition-normal: 260ms ease;
+    --transition-slow: 420ms ease;
+}
+
+/* Light Mode */
+
+html[data-theme="light"] {
+    --color-bg: #f8fbff;
+    --color-surface: #ffffff;
+    --color-surface-2: #f1f6fb;
+    --color-surface-3: #e8f0f8;
+
+    --color-primary: #0369a1;
+    --color-primary-hover: #075985;
+    --color-accent: #0f4c81;
+
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #243447;
+    --color-text-muted: #64748b;
+    --color-text-inverse: #ffffff;
+
+    /* Optional aliases for old usage */
+    --color-text: var(--color-text-secondary);
+    --color-heading: var(--color-text-primary);
+
+    --color-border: #d6e2ee;
+    --color-border-light: #c2d3e3;
+    --color-border-strong: #9fb6ca;
+
+    --color-link: #0369a1;
+    --color-link-hover: #075985;
+
+    --color-success: #15803d;
+    --color-error: #b91c1c;
+    --color-warning: #a16207;
+    --color-info: #1d4ed8;
+
+    --color-code-bg: #f3f8fc;
+    --color-code-border: #d6e2ee;
+    --color-code-text: #102033;
+
+    --color-overlay: rgba(255, 255, 255, 0.65);
+    --color-shadow: rgba(15, 23, 42, 0.08);
+    --color-selection-bg: rgba(3, 105, 161, 0.16);
+    --color-selection-text: #0f172a;
+}
+
+/* Global selection */
+
+::selection {
+    background: var(--color-selection-bg);
+    color: var(--color-selection-text);
+}
