@@ -1,0 +1,157 @@
+[
+    {
+        "title": "BIOS and UEFI - How a Computer Actually Starts",
+        "path": "/blog/bios-and-uefi-how-a-computer-starts",
+        "date": "Jan 05, 2025"
+    },
+    {
+        "title": "RAM vs Storage - Why Your Computer Needs Both",
+        "path": "/blog/ram-vs-storage-why-computers-need-both",
+        "date": "Jan 19, 2025"
+    },
+    {
+        "title": "Compiler vs Interpreter vs Assembler - How Programs Become Machine Code",
+        "path": "/blog/compiler-interpreter-assembler-how-programs-run",
+        "date": "Feb 02, 2025"
+    },
+    {
+        "title": "The Kernel - The Most Important Part of an Operating System",
+        "path": "/blog/the-kernel-heart-of-operating-system",
+        "date": "Feb 16, 2025"
+    },
+    {
+        "title": "Device Drivers - How Hardware Talks to Software",
+        "path": "/blog/device-drivers-how-hardware-talks-to-software",
+        "date": "Mar 02, 2025"
+    },
+    {
+        "title": "Virtual Machines - Running Multiple Operating Systems on One Computer",
+        "path": "/blog/virtual-machines-running-multiple-os",
+        "date": "Mar 16, 2025"
+    },
+    {
+        "title": "ISO Files - The Standard Format for System Images",
+        "path": "/blog/iso-files-system-images",
+        "date": "Mar 30, 2025"
+    },
+    {
+        "title": "Quick Format vs Full Format - What Really Happens to Your Drive",
+        "path": "/blog/quick-format-vs-full-format",
+        "date": "Apr 13, 2025"
+    },
+    {
+        "title": "DNS - The System That Turns Website Names into IP Addresses",
+        "path": "/blog/dns-how-domain-names-work",
+        "date": "Apr 27, 2025"
+    },
+    {
+        "title": "Encryption vs Hashing - Protecting Data in Different Ways",
+        "path": "/blog/encryption-vs-hashing",
+        "date": "May 11, 2025"
+    },
+    {
+        "title": "APIs - How Different Applications Communicate",
+        "path": "/blog/apis-how-applications-communicate",
+        "date": "May 25, 2025"
+    },
+    {
+        "title": "Unicode and UTF-8 - How Computers Represent Text",
+        "path": "/blog/unicode-and-utf8",
+        "date": "Jun 08, 2025"
+    },
+    {
+        "title": "Open Source Software - Why Collaboration Powers Technology",
+        "path": "/blog/open-source-software",
+        "date": "Jun 22, 2025"
+    },
+    {
+        "title": "Malware, Spyware, Trojans and Ransomware - Understanding Cyber Threats",
+        "path": "/blog/malware-types-and-threats",
+        "date": "Jul 06, 2025"
+    },
+    {
+        "title": "System Restore - Rolling Back Windows to a Working State",
+        "path": "/blog/system-restore",
+        "date": "Jul 20, 2025"
+    },
+    {
+        "title": "Bootloaders - The Program That Starts Your Operating System",
+        "path": "/blog/bootloaders-and-startup",
+        "date": "Aug 03, 2025"
+    },
+    {
+        "title": "Motherboard Chipsets - The Traffic Controller of Your Computer",
+        "path": "/blog/motherboard-chipsets",
+        "date": "Aug 17, 2025"
+    },
+    {
+        "title": "Refresh Rate - Why High Hertz Displays Feel Smoother",
+        "path": "/blog/refresh-rate-displays",
+        "date": "Aug 31, 2025"
+    },
+    {
+        "title": "Thermal Throttling - Why CPUs Slow Down When They Get Hot",
+        "path": "/blog/thermal-throttling",
+        "date": "Sep 14, 2025"
+    },
+    {
+        "title": "Processes and Threads - How Operating Systems Run Programs",
+        "path": "/blog/processes-and-threads",
+        "date": "Sep 28, 2025"
+    },
+    {
+        "title": "Race Conditions - When Timing Breaks Your Program",
+        "path": "/blog/race-conditions",
+        "date": "Oct 12, 2025"
+    },
+    {
+        "title": "Stack vs Heap Memory - How Programs Use Memory",
+        "path": "/blog/stack-vs-heap-memory",
+        "date": "Oct 26, 2025"
+    },
+    {
+        "title": "Checksums - Detecting Errors in Data",
+        "path": "/blog/checksums",
+        "date": "Nov 09, 2025"
+    },
+    {
+        "title": "Firewalls - The Security Gate of a Network",
+        "path": "/blog/firewalls",
+        "date": "Nov 23, 2025"
+    },
+    {
+        "title": "SSL vs TLS - The Evolution of Secure Web Encryption",
+        "path": "/blog/ssl-vs-tls",
+        "date": "Dec 07, 2025"
+    },
+    {
+        "title": "Content Delivery Networks - How the Internet Delivers Content Faster",
+        "path": "/blog/content-delivery-networks",
+        "date": "Dec 21, 2025"
+    },
+    {
+        "title": "FAT32, NTFS and exFAT - Understanding File Systems",
+        "path": "/blog/fat32-ntfs-exfat-understanding-file-systems",
+        "date": "Jan 04, 2026"
+    },
+    {
+        "title": "Source Code to Machine Code - How Software Actually Runs",
+        "path": "/blog/source-code-to-machine-code",
+        "date": "Jan 18, 2026"
+    },
+    {
+        "title": "Cache Memory - Why CPUs Need Ultra Fast Memory",
+        "path": "/blog/cache-memory-why-cpus-need-fast-memory",
+        "date": "Feb 01, 2026"
+    },
+    {
+        "title": "Cross Origin Resource Sharing - Why Browsers Block Some Requests",
+        "path": "/blog/cors-cross-origin-resource-sharing",
+        "date": "Feb 15, 2026"
+    },
+    {
+        "title": "Full vs Incremental vs Differential Backups",
+        "path": "/blog/full-incremental-differential-backups",
+        "date": "Mar 01, 2026"
+    }
+]

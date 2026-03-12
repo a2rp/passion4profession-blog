@@ -32,6 +32,7 @@ import SslVsTlsTheEvolutionOfSecureWebEncryption from "../pages/blogs/sslVsTlsTh
 import ContentDeliveryNetworksHowTheInternetDeliversContentFaster from "../pages/blogs/contentDeliveryNetworksHowTheInternetDeliversContentFaster";
 import CorsCrossOriginResourceSharing from "../pages/blogs/corsCrossOriginResourceSharing";
 import FullVsIncrementalVsDifferentialBackups from "../pages/blogs/fullVsIncrementalVsDifferentialBackups";
+import CookiesVsSessionsHowWebsitesRememberYou from "../pages/blogs/cookiesVsSessionsHowWebsitesRememberYou";
 
 export const blogRegistry = [
     {
@@ -225,5 +226,11 @@ export const blogRegistry = [
         path: "/blog/full-incremental-differential-backups",
         date: "Mar 01, 2026",
         component: <FullVsIncrementalVsDifferentialBackups />,
+    },
+    {
+        title: "Cookies vs Sessions - How Websites Remember You",
+        path: "/blog/cookies-vs-sessions-how-websites-remember-you",
+        date: "Mar 12, 2026",
+        component: <CookiesVsSessionsHowWebsitesRememberYou />,
     },
 ];
