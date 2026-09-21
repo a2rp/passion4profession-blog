@@ -153,5 +153,10 @@
         "title": "Full vs Incremental vs Differential Backups",
         "path": "/blog/full-incremental-differential-backups",
         "date": "Mar 01, 2026"
+    },
+    {
+        "title": "Cookies vs Sessions - How Websites Remember You",
+        "path": "/blog/cookies-vs-sessions-how-websites-remember-you",
+        "date": "Mar 12, 2026"
     }
 ]
