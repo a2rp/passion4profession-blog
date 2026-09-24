@@ -45,7 +45,7 @@ const dnsFlow = [
     {
         icon: <FiSearch />,
         title: "You type a website name",
-        text: "For example, you type openai.com into your browser.",
+        text: "For example, you type example.com into your browser.",
     },
     {
         icon: <FiMonitor />,
@@ -297,7 +297,7 @@ const DnsHowDomainNamesWork = () => {
                             <div>
                                 <strong>Domain name</strong>
                                 <p>
-                                    A human friendly name like openai.com or
+                                    A human friendly name like example.com or
                                     github.com.
                                 </p>
                             </div>

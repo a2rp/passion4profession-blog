@@ -172,7 +172,7 @@ const keyTerms = [
     {
         icon: <FiBox />,
         title: "Partition style",
-        text: "Modern UEFI systems often work with GPT based setups, while older BIOS systems were commonly associated with older partitioning approaches.",
+        text: "Modern UEFI systems often work with newer partition table formats, while older BIOS systems were commonly associated with earlier partitioning approaches.",
     },
     {
         icon: <FiLock />,

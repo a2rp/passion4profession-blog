@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Styled } from "./styled";
-import blackBgLogo from "/images/blackBgLogo.png";
-import { FiMoon, FiSun, FiEdit3 } from "react-icons/fi";
+import blackBgLogo from "/logo.png";
+import { FiMoon, FiSun } from "react-icons/fi";
 import { IoIosMenu } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 
@@ -9,19 +9,13 @@ const THEME_LS_KEY = "passion4profession-blog-theme";
 
 const Header = ({ handleSliderToggleClick }) => {
     const [logoLoaded, setLogoLoaded] = useState(false);
-    const [theme, setTheme] = useState("dark");
-
-    useEffect(() => {
-        const storedTheme = localStorage.getItem(THEME_LS_KEY);
-        const initialTheme = storedTheme || "dark";
-        setTheme(initialTheme);
-
-        if (initialTheme === "light") {
-            document.documentElement.setAttribute("data-theme", "light");
-        } else {
-            document.documentElement.removeAttribute("data-theme");
+    const [theme, setTheme] = useState(() => {
+        if (typeof window === "undefined") {
+            return "dark";
         }
-    }, []);
+
+        return localStorage.getItem(THEME_LS_KEY) || "dark";
+    });
 
     useEffect(() => {
         if (theme === "light") {

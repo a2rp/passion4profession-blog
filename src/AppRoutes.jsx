@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Box, CircularProgress, Typography } from "@mui/material";
 import { routeConfig, fallbackRoute } from "./lib/routeConfig";
 
@@ -22,8 +22,10 @@ const PageLoader = () => {
 };
 
 const AppRoutes = () => {
+    const location = useLocation();
+
     return (
-        <Suspense fallback={<PageLoader />}>
+        <Suspense key={location.pathname} fallback={<PageLoader />}>
             <Routes>
                 {routeConfig.map((route) => (
                     <Route
