@@ -31,7 +31,7 @@ export const Styled = {
             height: 280px;
             top: -90px;
             left: 4%;
-            background: rgba(125, 211, 252, 0.18);
+            background: rgba(200, 200, 200, 0.18);
         }
 
         .heroGlowTwo {
@@ -39,7 +39,7 @@ export const Styled = {
             height: 320px;
             right: 4%;
             bottom: -120px;
-            background: rgba(147, 197, 253, 0.14);
+            background: rgba(193, 193, 193, 0.14);
         }
 
         .heroInner {
@@ -152,11 +152,11 @@ export const Styled = {
 
         html[data-theme="light"] & {
             .heroGlowOne {
-                background: rgba(3, 105, 161, 0.16);
+                background: rgba(100, 100, 100, 0.16);
             }
 
             .heroGlowTwo {
-                background: rgba(29, 78, 216, 0.12);
+                background: rgba(92, 92, 92, 0.12);
             }
         }
     `,
@@ -452,12 +452,12 @@ export const Styled = {
             height: 8px;
             border-radius: 999px;
             background: var(--color-primary);
-            box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.08);
+            box-shadow: 0 0 0 4px rgba(200, 200, 200, 0.08);
         }
 
         html[data-theme="light"] & {
             .focusList li::before {
-                box-shadow: 0 0 0 4px rgba(3, 105, 161, 0.08);
+                box-shadow: 0 0 0 4px rgba(100, 100, 100, 0.08);
             }
         }
     `,

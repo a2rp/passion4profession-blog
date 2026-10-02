@@ -40,7 +40,7 @@ export const Styled = {
             height: 280px;
             top: -90px;
             left: 2%;
-            background: rgba(125, 211, 252, 0.16);
+            background: rgba(200, 200, 200, 0.16);
         }
 
         .heroGlowTwo {
@@ -48,7 +48,7 @@ export const Styled = {
             height: 340px;
             right: 2%;
             bottom: -130px;
-            background: rgba(147, 197, 253, 0.12);
+            background: rgba(193, 193, 193, 0.12);
         }
 
         .heroInner {
@@ -467,7 +467,7 @@ export const Styled = {
             height: 8px;
             border-radius: 999px;
             background: var(--color-primary);
-            box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.08);
+            box-shadow: 0 0 0 4px rgba(200, 200, 200, 0.08);
         }
 
         .faqList {
@@ -479,7 +479,7 @@ export const Styled = {
 
         html[data-theme="light"] & {
             .bulletList li::before {
-                box-shadow: 0 0 0 4px rgba(3, 105, 161, 0.08);
+                box-shadow: 0 0 0 4px rgba(100, 100, 100, 0.08);
             }
         }
     `,

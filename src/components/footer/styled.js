@@ -22,8 +22,8 @@ export const Styled = {
         html[data-theme="light"] & {
             background: linear-gradient(
                 180deg,
-                rgba(15, 23, 42, 0.025),
-                rgba(15, 23, 42, 0.006)
+                rgba(23, 23, 23, 0.025),
+                rgba(23, 23, 23, 0.006)
             );
         }
     `,
@@ -53,7 +53,7 @@ export const Styled = {
 
         .copyright a:hover {
             color: var(--color-link-hover);
-            text-shadow: 0 0 12px rgba(125, 211, 252, 0.45);
+            text-shadow: 0 0 12px rgba(200, 200, 200, 0.45);
         }
 
         .projectName {
@@ -96,7 +96,7 @@ export const Styled = {
             border-color: var(--color-border-light);
             color: var(--color-primary);
             box-shadow: 0 8px 18px var(--color-shadow);
-            text-shadow: 0 0 10px rgba(125, 211, 252, 0.45);
+            text-shadow: 0 0 10px rgba(200, 200, 200, 0.45);
         }
 
         .linkGroup svg {

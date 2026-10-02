@@ -90,8 +90,8 @@ export const Styled = {
             background:
                 linear-gradient(
                     180deg,
-                    rgba(15, 23, 42, 0.06),
-                    rgba(15, 23, 42, 0.02)
+                    rgba(23, 23, 23, 0.06),
+                    rgba(23, 23, 23, 0.02)
                 ),
                 var(--color-surface-2);
 

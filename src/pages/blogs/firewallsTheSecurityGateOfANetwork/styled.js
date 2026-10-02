@@ -40,7 +40,7 @@ export const Styled = {
             height: 260px;
             top: -80px;
             left: 2%;
-            background: rgba(125, 211, 252, 0.16);
+            background: rgba(200, 200, 200, 0.16);
         }
 
         .heroGlowTwo {
@@ -48,7 +48,7 @@ export const Styled = {
             height: 340px;
             right: 2%;
             bottom: -130px;
-            background: rgba(147, 197, 253, 0.12);
+            background: rgba(193, 193, 193, 0.12);
         }
 
         .heroInner {

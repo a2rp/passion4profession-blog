@@ -54,12 +54,12 @@ body {
     background-image:
         radial-gradient(
             960px 500px at 8% -6%,
-            rgba(125, 211, 252, 0.08),
+            rgba(200, 200, 200, 0.08),
             transparent 62%
         ),
         radial-gradient(
             820px 420px at 96% 10%,
-            rgba(147, 197, 253, 0.06),
+            rgba(193, 193, 193, 0.06),
             transparent 66%
         ),
         linear-gradient(180deg, rgba(255, 255, 255, 0.015), transparent 24%),
@@ -85,26 +85,26 @@ html[data-theme="light"] body {
     background-image:
         radial-gradient(
             960px 500px at 8% -6%,
-            rgba(3, 105, 161, 0.08),
+            rgba(100, 100, 100, 0.08),
             transparent 64%
         ),
         radial-gradient(
             840px 420px at 96% 10%,
-            rgba(29, 78, 216, 0.05),
+            rgba(92, 92, 92, 0.05),
             transparent 68%
         ),
         linear-gradient(180deg, rgba(255, 255, 255, 0.25), transparent 30%),
         repeating-linear-gradient(
             90deg,
-            rgba(15, 23, 42, 0.03) 0px,
-            rgba(15, 23, 42, 0.03) 1px,
+            rgba(23, 23, 23, 0.03) 0px,
+            rgba(23, 23, 23, 0.03) 1px,
             transparent 1px,
             transparent 40px
         ),
         repeating-linear-gradient(
             0deg,
-            rgba(15, 23, 42, 0.025) 0px,
-            rgba(15, 23, 42, 0.025) 1px,
+            rgba(23, 23, 23, 0.025) 0px,
+            rgba(23, 23, 23, 0.025) 1px,
             transparent 1px,
             transparent 40px
         );
@@ -273,13 +273,13 @@ select:hover {
     outline: 2px solid var(--color-primary);
     outline-offset: 3px;
     box-shadow:
-        0 0 0 4px rgba(125, 211, 252, 0.16),
+        0 0 0 4px rgba(200, 200, 200, 0.16),
         0 8px 22px var(--color-shadow);
 }
 
 html[data-theme="light"] :focus-visible {
     box-shadow:
-        0 0 0 4px rgba(3, 105, 161, 0.14),
+        0 0 0 4px rgba(100, 100, 100, 0.14),
         0 8px 22px var(--color-shadow);
 }
 

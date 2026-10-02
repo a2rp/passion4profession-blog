@@ -129,7 +129,7 @@ export const Styled = {
         .searchBox input:focus {
             border-color: var(--color-primary);
             background: var(--color-surface);
-            box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.1);
+            box-shadow: 0 0 0 4px rgba(200, 200, 200, 0.1);
         }
 
         .clearButton {
@@ -191,8 +191,8 @@ export const Styled = {
             background:
                 linear-gradient(
                     90deg,
-                    rgba(125, 211, 252, 0.08),
-                    rgba(125, 211, 252, 0.02)
+                    rgba(200, 200, 200, 0.08),
+                    rgba(200, 200, 200, 0.02)
                 ),
                 var(--color-surface-3);
             color: var(--color-text-primary);
@@ -203,8 +203,8 @@ export const Styled = {
             background:
                 linear-gradient(
                     90deg,
-                    rgba(125, 211, 252, 0.14),
-                    rgba(125, 211, 252, 0.03)
+                    rgba(200, 200, 200, 0.14),
+                    rgba(200, 200, 200, 0.03)
                 ),
                 var(--color-surface);
             color: var(--color-text-primary);
@@ -243,7 +243,7 @@ export const Styled = {
             background: var(--color-primary);
             color: var(--color-text-inverse);
             border-color: var(--color-primary);
-            box-shadow: 0 10px 24px rgba(125, 211, 252, 0.14);
+            box-shadow: 0 10px 24px rgba(200, 200, 200, 0.14);
         }
 
         .textGroup {
@@ -317,19 +317,19 @@ export const Styled = {
             }
 
             .infoRow {
-                background: rgba(15, 23, 42, 0.02);
+                background: rgba(23, 23, 23, 0.02);
             }
 
             .searchBox input:focus {
-                box-shadow: 0 0 0 4px rgba(3, 105, 161, 0.1);
+                box-shadow: 0 0 0 4px rgba(100, 100, 100, 0.1);
             }
 
             .navLink:hover {
                 background:
                     linear-gradient(
                         90deg,
-                        rgba(3, 105, 161, 0.08),
-                        rgba(3, 105, 161, 0.02)
+                        rgba(100, 100, 100, 0.08),
+                        rgba(100, 100, 100, 0.02)
                     ),
                     var(--color-surface-3);
             }
@@ -338,14 +338,14 @@ export const Styled = {
                 background:
                     linear-gradient(
                         90deg,
-                        rgba(3, 105, 161, 0.12),
-                        rgba(3, 105, 161, 0.03)
+                        rgba(100, 100, 100, 0.12),
+                        rgba(100, 100, 100, 0.03)
                     ),
                     var(--color-surface);
             }
 
             .navLink.active .initialBadge {
-                box-shadow: 0 10px 24px rgba(3, 105, 161, 0.14);
+                box-shadow: 0 10px 24px rgba(100, 100, 100, 0.14);
             }
         }
     `,

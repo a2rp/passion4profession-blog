@@ -159,7 +159,7 @@ export const Styled = {
                 input:focus {
                     border-color: var(--color-primary);
                     background: var(--color-surface);
-                    box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.1);
+                    box-shadow: 0 0 0 4px rgba(200, 200, 200, 0.1);
                 }
             }
 
@@ -248,8 +248,8 @@ export const Styled = {
                 background:
                     linear-gradient(
                         90deg,
-                        rgba(125, 211, 252, 0.14),
-                        rgba(125, 211, 252, 0.03)
+                        rgba(200, 200, 200, 0.14),
+                        rgba(200, 200, 200, 0.03)
                     ),
                     var(--color-surface);
                 color: var(--color-text-primary);
@@ -260,7 +260,7 @@ export const Styled = {
                 background: var(--color-primary);
                 color: var(--color-text-inverse);
                 border-color: var(--color-primary);
-                box-shadow: 0 10px 24px rgba(125, 211, 252, 0.14);
+                box-shadow: 0 10px 24px rgba(200, 200, 200, 0.14);
             }
 
             &.hideMenuSlider {
@@ -315,7 +315,7 @@ export const Styled = {
                 border-radius: 50%;
                 background: radial-gradient(
                     circle,
-                    rgba(125, 211, 252, 0.08),
+                    rgba(200, 200, 200, 0.08),
                     transparent 68%
                 );
                 filter: blur(10px);
@@ -331,7 +331,7 @@ export const Styled = {
                 border-radius: 50%;
                 background: radial-gradient(
                     circle,
-                    rgba(147, 197, 253, 0.06),
+                    rgba(193, 193, 193, 0.06),
                     transparent 70%
                 );
                 filter: blur(14px);
@@ -373,15 +373,15 @@ export const Styled = {
 
         @keyframes a2rpFocusPulse {
             0% {
-                box-shadow: 0 0 0 0px rgba(125, 211, 252, 0.18);
+                box-shadow: 0 0 0 0px rgba(200, 200, 200, 0.18);
                 border-radius: var(--radius-md);
             }
             50% {
-                box-shadow: 0 0 0 8px rgba(125, 211, 252, 0.1);
+                box-shadow: 0 0 0 8px rgba(200, 200, 200, 0.1);
                 border-radius: var(--radius-md);
             }
             100% {
-                box-shadow: 0 0 0 0px rgba(125, 211, 252, 0);
+                box-shadow: 0 0 0 0px rgba(200, 200, 200, 0);
                 border-radius: var(--radius-md);
             }
         }
@@ -399,7 +399,7 @@ export const Styled = {
                         var(--color-surface) 0%,
                         var(--color-surface-2) 100%
                     );
-                box-shadow: inset -1px 0 0 rgba(15, 23, 42, 0.03);
+                box-shadow: inset -1px 0 0 rgba(23, 23, 23, 0.03);
 
                 @media (max-width: 700px) {
                     box-shadow: 12px 0 36px var(--color-shadow);
@@ -416,25 +416,25 @@ export const Styled = {
                 }
 
                 .searchWrapper input:focus {
-                    box-shadow: 0 0 0 4px rgba(3, 105, 161, 0.1);
+                    box-shadow: 0 0 0 4px rgba(100, 100, 100, 0.1);
                 }
 
                 .menuLink:hover {
-                    background: rgba(15, 23, 42, 0.035);
+                    background: rgba(23, 23, 23, 0.035);
                 }
 
                 .menuLink.active {
                     background:
                         linear-gradient(
                             90deg,
-                            rgba(3, 105, 161, 0.12),
-                            rgba(3, 105, 161, 0.03)
+                            rgba(100, 100, 100, 0.12),
+                            rgba(100, 100, 100, 0.03)
                         ),
                         var(--color-surface);
                 }
 
                 .menuLink.active .menuLinkInitial {
-                    box-shadow: 0 10px 24px rgba(3, 105, 161, 0.14);
+                    box-shadow: 0 10px 24px rgba(100, 100, 100, 0.14);
                 }
             }
 
@@ -442,7 +442,7 @@ export const Styled = {
                 .contentGlow::before {
                     background: radial-gradient(
                         circle,
-                        rgba(3, 105, 161, 0.08),
+                        rgba(100, 100, 100, 0.08),
                         transparent 68%
                     );
                 }
@@ -450,7 +450,7 @@ export const Styled = {
                 .contentGlow::after {
                     background: radial-gradient(
                         circle,
-                        rgba(29, 78, 216, 0.05),
+                        rgba(92, 92, 92, 0.05),
                         transparent 70%
                     );
                 }
@@ -459,7 +459,7 @@ export const Styled = {
                     background:
                         linear-gradient(
                             180deg,
-                            rgba(15, 23, 42, 0.02),
+                            rgba(23, 23, 23, 0.02),
                             transparent
                         ),
                         transparent;
@@ -472,15 +472,15 @@ export const Styled = {
 
             @keyframes a2rpFocusPulseLight {
                 0% {
-                    box-shadow: 0 0 0 0px rgba(3, 105, 161, 0.14);
+                    box-shadow: 0 0 0 0px rgba(100, 100, 100, 0.14);
                     border-radius: var(--radius-md);
                 }
                 50% {
-                    box-shadow: 0 0 0 8px rgba(3, 105, 161, 0.08);
+                    box-shadow: 0 0 0 8px rgba(100, 100, 100, 0.08);
                     border-radius: var(--radius-md);
                 }
                 100% {
-                    box-shadow: 0 0 0 0px rgba(3, 105, 161, 0);
+                    box-shadow: 0 0 0 0px rgba(100, 100, 100, 0);
                     border-radius: var(--radius-md);
                 }
             }

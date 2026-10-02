@@ -128,8 +128,8 @@ export const Styled = {
             background:
                 linear-gradient(
                     90deg,
-                    rgba(125, 211, 252, 0.08),
-                    rgba(125, 211, 252, 0.02)
+                    rgba(200, 200, 200, 0.08),
+                    rgba(200, 200, 200, 0.02)
                 ),
                 var(--color-surface-3);
             color: var(--color-text-primary);
@@ -227,15 +227,15 @@ export const Styled = {
             }
 
             .infoStrip {
-                background: rgba(15, 23, 42, 0.02);
+                background: rgba(23, 23, 23, 0.02);
             }
 
             .archiveLink:hover {
                 background:
                     linear-gradient(
                         90deg,
-                        rgba(3, 105, 161, 0.08),
-                        rgba(3, 105, 161, 0.02)
+                        rgba(100, 100, 100, 0.08),
+                        rgba(100, 100, 100, 0.02)
                     ),
                     var(--color-surface-3);
             }
