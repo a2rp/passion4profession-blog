@@ -1,4 +1,4 @@
-import{c as o,j as r,F as a,S as l,a as c,b as t,d,e as s,f as n}from"./index-DfuR22ni.js";const i={Wrapper:o.div`
+import{d as o,j as r,F as a,S as l,a as c,b as t,c as d,e as s,f as n}from"./index-1d6Zs2Qo.js";const i={Wrapper:o.div`
         width: 100%;
         color: var(--color-text-primary);
     `,HeroSection:o.section`
@@ -26,7 +26,7 @@ import{c as o,j as r,F as a,S as l,a as c,b as t,d,e as s,f as n}from"./index-Df
             height: 280px;
             top: -90px;
             left: 4%;
-            background: rgba(125, 211, 252, 0.18);
+            background: rgba(200, 200, 200, 0.18);
         }
 
         .heroGlowTwo {
@@ -34,7 +34,7 @@ import{c as o,j as r,F as a,S as l,a as c,b as t,d,e as s,f as n}from"./index-Df
             height: 320px;
             right: 4%;
             bottom: -120px;
-            background: rgba(147, 197, 253, 0.14);
+            background: rgba(193, 193, 193, 0.14);
         }
 
         .heroInner {
@@ -147,11 +147,11 @@ import{c as o,j as r,F as a,S as l,a as c,b as t,d,e as s,f as n}from"./index-Df
 
         html[data-theme="light"] & {
             .heroGlowOne {
-                background: rgba(3, 105, 161, 0.16);
+                background: rgba(100, 100, 100, 0.16);
             }
 
             .heroGlowTwo {
-                background: rgba(29, 78, 216, 0.12);
+                background: rgba(92, 92, 92, 0.12);
             }
         }
     `,ContentSection:o.section`
@@ -441,12 +441,12 @@ import{c as o,j as r,F as a,S as l,a as c,b as t,d,e as s,f as n}from"./index-Df
             height: 8px;
             border-radius: 999px;
             background: var(--color-primary);
-            box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.08);
+            box-shadow: 0 0 0 4px rgba(200, 200, 200, 0.08);
         }
 
         html[data-theme="light"] & {
             .focusList li::before {
-                box-shadow: 0 0 0 4px rgba(3, 105, 161, 0.08);
+                box-shadow: 0 0 0 4px rgba(100, 100, 100, 0.08);
             }
         }
     `,FooterNote:o.section`
