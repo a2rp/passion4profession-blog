@@ -18,87 +18,6 @@ export const Styled = {
         display: flex;
         flex-direction: column;
 
-        .headerBlock {
-            display: flex;
-            align-items: flex-start;
-            gap: 14px;
-            padding: 18px;
-            border-bottom: 1px solid var(--color-border);
-            background:
-                linear-gradient(
-                    180deg,
-                    rgba(255, 255, 255, 0.03),
-                    rgba(255, 255, 255, 0.01)
-                ),
-                transparent;
-        }
-
-        .headerIcon {
-            width: 46px;
-            height: 46px;
-            flex-shrink: 0;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: var(--radius-sm);
-            border: 1px solid var(--color-border);
-            background: var(--color-surface-3);
-            color: var(--color-primary);
-            box-shadow: 0 10px 24px var(--color-shadow);
-        }
-
-        .headerIcon svg {
-            width: 20px;
-            height: 20px;
-        }
-
-        .headerContent {
-            min-width: 0;
-        }
-
-        .headerContent h2 {
-            font-size: 18px;
-            line-height: 1.2;
-            color: var(--color-text-primary);
-            margin-bottom: 6px;
-        }
-
-        .headerContent p {
-            font-size: 13px;
-            line-height: 1.6;
-            color: var(--color-text-secondary);
-        }
-
-        .infoRow {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            padding: 12px 18px;
-            border-bottom: 1px solid var(--color-border);
-            background: rgba(255, 255, 255, 0.015);
-        }
-
-        .infoPill {
-            min-height: 32px;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 0 10px;
-            border-radius: 999px;
-            border: 1px solid var(--color-border);
-            background: var(--color-surface-3);
-            color: var(--color-text-secondary);
-            font-size: 12px;
-            font-weight: 700;
-        }
-
-        .pillIcon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-primary);
-        }
-
         .searchBox {
             position: relative;
             padding: 14px 18px;
@@ -276,14 +195,6 @@ export const Styled = {
         }
 
         @media (max-width: 640px) {
-            .headerBlock {
-                padding: 16px;
-            }
-
-            .infoRow {
-                padding: 10px 16px;
-            }
-
             .searchBox {
                 padding: 12px 16px;
             }
@@ -306,20 +217,6 @@ export const Styled = {
         }
 
         html[data-theme="light"] & {
-            .headerBlock {
-                background:
-                    linear-gradient(
-                        180deg,
-                        rgba(255, 255, 255, 0.8),
-                        rgba(255, 255, 255, 0.35)
-                    ),
-                    transparent;
-            }
-
-            .infoRow {
-                background: rgba(23, 23, 23, 0.02);
-            }
-
             .searchBox input:focus {
                 box-shadow: 0 0 0 4px rgba(100, 100, 100, 0.1);
             }

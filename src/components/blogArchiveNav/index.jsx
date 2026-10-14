@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { FiBookOpen, FiSearch, FiX, FiFeather, FiClock } from "react-icons/fi";
+import { FiSearch, FiX } from "react-icons/fi";
 import { Styled } from "./styled";
 import { blogRegistry } from "../../lib/blogRegistry";
 
@@ -72,33 +72,6 @@ const BlogArchiveNav = () => {
 
     return (
         <Styled.Wrapper>
-            <div className="headerBlock">
-                <div className="headerIcon">
-                    <FiBookOpen />
-                </div>
-
-                <div className="headerContent">
-                    <h2>Blog Posts</h2>
-                    <p>Browse the current routes for the new blog setup.</p>
-                </div>
-            </div>
-
-            <div className="infoRow">
-                <div className="infoPill">
-                    <span className="pillIcon">
-                        <FiFeather />
-                    </span>
-                    <span>Engineering insights</span>
-                </div>
-
-                <div className="infoPill">
-                    <span className="pillIcon">
-                        <FiClock />
-                    </span>
-                    <span>Technical articles</span>
-                </div>
-            </div>
-
             <div className="searchBox">
                 <FiSearch className="searchIcon" />
 
