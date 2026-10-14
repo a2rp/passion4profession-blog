@@ -246,6 +246,14 @@ const OpenSourceSoftwareWhyCollaborationPowersTechnology = () => {
     return (
         <Styled.Wrapper className="topicWrapper">
             <Styled.HeroCard>
+                <figure className="blogHeroImage">
+                    <img
+                        src={import.meta.env.BASE_URL + "images/blog-heroes/open-source.webp"}
+                        alt="Developers collaborating around a shared software project"
+                        loading="eager"
+                        decoding="async"
+                    />
+                </figure>
                 <div className="heroGlow heroGlowOne" />
                 <div className="heroGlow heroGlowTwo" />
 

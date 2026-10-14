@@ -361,6 +361,41 @@ export const Styled = {
 
         .topicWrapper {
             scroll-margin-top: calc(var(--header-height) + 12px);
+
+            .blogHeroImage {
+                position: relative;
+                height: clamp(210px, 27vw, 380px);
+                margin: -1px -1px 0;
+                overflow: hidden;
+                border-radius: calc(var(--radius-xl) - 1px)
+                    calc(var(--radius-xl) - 1px) 0 0;
+                background: var(--color-surface-2);
+            }
+
+            .blogHeroImage::after {
+                position: absolute;
+                inset: 0;
+                content: "";
+                background: linear-gradient(
+                    90deg,
+                    rgba(8, 10, 14, 0.2),
+                    transparent 75%
+                );
+                pointer-events: none;
+            }
+
+            .blogHeroImage img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            @media (max-width: 700px) {
+                .blogHeroImage {
+                    height: clamp(190px, 52vw, 280px);
+                }
+            }
         }
 
         .topicWrapper + .topicWrapper {

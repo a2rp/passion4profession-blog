@@ -252,6 +252,14 @@ const CookiesVsSessionsHowWebsitesRememberYou = () => {
     return (
         <Styled.Wrapper className="topicWrapper">
             <Styled.HeroCard>
+                <figure className="blogHeroImage">
+                    <img
+                        src={import.meta.env.BASE_URL + "images/blog-heroes/cookies-sessions.webp"}
+                        alt="Browser cookie and server session helping a website remember a user"
+                        loading="eager"
+                        decoding="async"
+                    />
+                </figure>
                 <div className="heroGlow heroGlowOne" />
                 <div className="heroGlow heroGlowTwo" />
 

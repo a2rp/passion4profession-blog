@@ -190,6 +190,14 @@ const BootloadersAndStartup = () => {
     return (
         <Styled.Wrapper className="topicWrapper">
             <Styled.HeroCard>
+                <figure className="blogHeroImage">
+                    <img
+                        src={import.meta.env.BASE_URL + "images/blog-heroes/bootloaders.webp"}
+                        alt="Computer startup handoff from boot drive to operating system"
+                        loading="eager"
+                        decoding="async"
+                    />
+                </figure>
                 <div className="heroGlow heroGlowOne" />
                 <div className="heroGlow heroGlowTwo" />
 

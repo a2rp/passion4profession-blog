@@ -306,6 +306,14 @@ const ContentDeliveryNetworksHowTheInternetDeliversContentFaster = () => {
     return (
         <Styled.Wrapper className="topicWrapper">
             <Styled.HeroCard>
+                <figure className="blogHeroImage">
+                    <img
+                        src={import.meta.env.BASE_URL + "images/blog-heroes/cdn.webp"}
+                        alt="Global content delivery network routing data through nearby edge servers"
+                        loading="eager"
+                        decoding="async"
+                    />
+                </figure>
                 <div className="heroGlow heroGlowOne" />
                 <div className="heroGlow heroGlowTwo" />
 

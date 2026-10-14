@@ -111,8 +111,16 @@ const faq = [
 
 const SystemRestoreRollingBackWindows = () => {
     return (
-        <Styled.Wrapper>
+        <Styled.Wrapper className="topicWrapper">
             <Styled.Hero>
+                <figure className="blogHeroImage">
+                    <img
+                        src={import.meta.env.BASE_URL + "images/blog-heroes/system-restore.webp"}
+                        alt="Computer system timeline returning to an earlier restore point"
+                        loading="eager"
+                        decoding="async"
+                    />
+                </figure>
                 <div className="badge">
                     <FiRefreshCw /> Windows recovery
                 </div>

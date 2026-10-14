@@ -238,6 +238,14 @@ const ProcessesAndThreadsHowOperatingSystemsRunPrograms = () => {
     return (
         <Styled.Wrapper className="topicWrapper">
             <Styled.HeroCard>
+                <figure className="blogHeroImage">
+                    <img
+                        src={import.meta.env.BASE_URL + "images/blog-heroes/processes-threads.webp"}
+                        alt="Application task branching into parallel processor threads"
+                        loading="eager"
+                        decoding="async"
+                    />
+                </figure>
                 <div className="heroGlow heroGlowOne" />
                 <div className="heroGlow heroGlowTwo" />
 

@@ -283,6 +283,14 @@ const SslVsTlsTheEvolutionOfSecureWebEncryption = () => {
     return (
         <Styled.Wrapper className="topicWrapper">
             <Styled.HeroCard>
+                <figure className="blogHeroImage">
+                    <img
+                        src={import.meta.env.BASE_URL + "images/blog-heroes/ssl-tls.webp"}
+                        alt="Secure encrypted connection handshake between browser and server"
+                        loading="eager"
+                        decoding="async"
+                    />
+                </figure>
                 <div className="heroGlow heroGlowOne" />
                 <div className="heroGlow heroGlowTwo" />
 

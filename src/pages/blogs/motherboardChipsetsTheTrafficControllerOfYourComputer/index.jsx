@@ -207,6 +207,14 @@ const MotherboardChipsetsTheTrafficControllerOfYourComputer = () => {
     return (
         <Styled.Wrapper className="topicWrapper">
             <Styled.HeroCard>
+                <figure className="blogHeroImage">
+                    <img
+                        src={import.meta.env.BASE_URL + "images/blog-heroes/motherboard.webp"}
+                        alt="Motherboard chipset routing data to computer components"
+                        loading="eager"
+                        decoding="async"
+                    />
+                </figure>
                 <div className="heroGlow heroGlowOne" />
                 <div className="heroGlow heroGlowTwo" />
 

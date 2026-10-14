@@ -252,6 +252,14 @@ const VirtualMachinesRunningMultipleOperatingSystemsOnOneComputer = () => {
     return (
         <Styled.Wrapper className="topicWrapper">
             <Styled.HeroCard>
+                <figure className="blogHeroImage">
+                    <img
+                        src={import.meta.env.BASE_URL + "images/blog-heroes/virtual-machines.webp"}
+                        alt="Laptop hosting several virtual operating system desktops"
+                        loading="eager"
+                        decoding="async"
+                    />
+                </figure>
                 <div className="heroGlow heroGlowOne" />
                 <div className="heroGlow heroGlowTwo" />
 
