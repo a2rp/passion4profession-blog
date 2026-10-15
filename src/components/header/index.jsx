@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Styled } from "./styled";
 import blackBgLogo from "/logo.png";
-import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
+import { FiGithub, FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
 const THEME_LS_KEY = "passion4profession-blog-theme";
@@ -63,6 +63,17 @@ const Header = ({ handleSliderToggleClick, sliderOpen }) => {
                 </div>
 
                 <div className="rightSide">
+                    <a
+                        className="repoLink"
+                        href="https://github.com/a2rp/passion4profession-blog"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="View the source repository on GitHub"
+                        title="View source repository"
+                    >
+                        <FiGithub aria-hidden="true" />
+                        <span>Repo</span>
+                    </a>
                     <button
                         type="button"
                         className="themeToggleBtn"

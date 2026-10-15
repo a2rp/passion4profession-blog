@@ -225,6 +225,68 @@ export const Styled = {
             }
         }
 
+        .repoLink {
+            min-height: 42px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 0 12px;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(255, 255, 255, 0.04),
+                    rgba(255, 255, 255, 0.015)
+                ),
+                var(--color-surface-2);
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            box-shadow: 0 10px 24px var(--color-shadow);
+            transition:
+                background var(--transition-fast),
+                border-color var(--transition-fast),
+                color var(--transition-fast),
+                transform var(--transition-fast),
+                box-shadow var(--transition-fast);
+        }
+
+        .repoLink svg {
+            width: 17px;
+            height: 17px;
+            color: var(--color-primary);
+        }
+
+        .repoLink span {
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .repoLink:hover {
+            border-color: var(--color-primary);
+            background: var(--color-surface-3);
+            color: var(--color-text-primary);
+            text-decoration: none;
+            box-shadow: 0 14px 28px var(--color-shadow);
+            transform: translateY(-1px);
+        }
+
+        .repoLink:active {
+            transform: translateY(1px);
+        }
+
+        @media (max-width: 420px) {
+            .repoLink {
+                min-width: 42px;
+                padding: 0;
+            }
+
+            .repoLink span {
+                display: none;
+            }
+        }
+
         .themeToggleBtn {
             display: inline-flex;
             align-items: center;
@@ -287,7 +349,8 @@ export const Styled = {
 
         html[data-theme="light"] & {
             .toggleButton,
-            .themeToggleBtn {
+            .themeToggleBtn,
+            .repoLink {
                 background:
                     linear-gradient(
                         180deg,
