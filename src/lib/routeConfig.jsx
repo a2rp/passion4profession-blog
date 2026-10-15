@@ -1,6 +1,7 @@
 import React, { lazy } from "react";
 import { blogRegistry } from "./blogRegistry";
 
+const Home = lazy(() => import("../pages/home"));
 const About = lazy(() => import("../components/about"));
 const NotFound = lazy(() => import("../pages/notFound"));
 
@@ -11,10 +12,14 @@ export const routeConfig = [
     })),
     {
         path: "/",
-        element: <About />,
+        element: <Home />,
     },
     {
         path: "/home",
+        element: <Home />,
+    },
+    {
+        path: "/about",
         element: <About />,
     },
 ];

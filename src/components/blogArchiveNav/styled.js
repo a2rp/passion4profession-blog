@@ -18,6 +18,54 @@ export const Styled = {
         display: flex;
         flex-direction: column;
 
+        .siteNavigation {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .siteLink {
+            min-height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            background: var(--color-surface-2);
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 700;
+            transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+        }
+
+        .siteLink svg {
+            width: 16px;
+            height: 16px;
+            flex: none;
+            color: var(--color-primary);
+        }
+
+        .siteLink:hover {
+            border-color: var(--color-border-light);
+            background: var(--color-surface-3);
+            color: var(--color-text-primary);
+            text-decoration: none;
+        }
+
+        .siteLink.active {
+            border-color: var(--color-primary);
+            background: var(--color-primary);
+            color: var(--color-text-inverse);
+        }
+
+        .siteLink.active svg {
+            color: var(--color-text-inverse);
+        }
+
         .searchBox {
             position: relative;
             padding: 14px 18px;

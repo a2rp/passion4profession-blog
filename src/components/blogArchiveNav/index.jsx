@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { FiSearch, FiX } from "react-icons/fi";
+import { FiHome, FiInfo, FiSearch, FiX } from "react-icons/fi";
 import { Styled } from "./styled";
 import { blogRegistry } from "../../lib/blogRegistry";
 
@@ -72,6 +72,27 @@ const BlogArchiveNav = ({ onNavigate }) => {
 
     return (
         <Styled.Wrapper>
+            <nav className="siteNavigation" aria-label="Site pages">
+                <NavLink
+                    to="/"
+                    end
+                    onClick={onNavigate}
+                    className={({ isActive }) =>
+                        isActive ? "siteLink active" : "siteLink"
+                    }
+                >
+                    <FiHome aria-hidden="true" /> Home
+                </NavLink>
+                <NavLink
+                    to="/about"
+                    onClick={onNavigate}
+                    className={({ isActive }) =>
+                        isActive ? "siteLink active" : "siteLink"
+                    }
+                >
+                    <FiInfo aria-hidden="true" /> About
+                </NavLink>
+            </nav>
             <div className="searchBox">
                 <FiSearch className="searchIcon" />
 
