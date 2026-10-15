@@ -2,7 +2,7 @@
 
 A React and Vite knowledge blog for clear technical essays, computing notes, and practical learning resources.
 
-![Passion4Profession Blog screenshot](./screenshot.jpg)
+![Passion4Profession Blog screenshot](./screenshot.png)
 
 ## Features
 
