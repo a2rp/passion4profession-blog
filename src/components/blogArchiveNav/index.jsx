@@ -4,7 +4,7 @@ import { FiSearch, FiX } from "react-icons/fi";
 import { Styled } from "./styled";
 import { blogRegistry } from "../../lib/blogRegistry";
 
-const BlogArchiveNav = () => {
+const BlogArchiveNav = ({ onNavigate }) => {
     const location = useLocation();
     const activeItemRef = useRef(null);
     const listRef = useRef(null);
@@ -106,13 +106,22 @@ const BlogArchiveNav = () => {
                             <li key={item.path} className="navItem">
                                 <NavLink
                                     to={item.path}
+                                    onClick={onNavigate}
                                     className={({ isActive: navIsActive }) =>
-                                        `navLink ${navIsActive ? "active" : ""}`
+                                        navIsActive ? "navLink active" : "navLink"
                                     }
                                     ref={isActive ? activeItemRef : null}
                                 >
-                                    <span className="initialBadge">
-                                        {firstLetter}
+                                    <span className="thumbnailBadge">
+                                        {item.thumbnail ? (
+                                            <img
+                                                src={import.meta.env.BASE_URL + "images/blog-heroes/" + item.thumbnail}
+                                                alt=""
+                                                loading="lazy"
+                                            />
+                                        ) : (
+                                            firstLetter
+                                        )}
                                     </span>
 
                                     <span className="textGroup">

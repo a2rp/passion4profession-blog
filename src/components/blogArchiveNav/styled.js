@@ -46,6 +46,7 @@ export const Styled = {
         }
 
         .searchBox input:focus {
+            outline: none;
             border-color: var(--color-primary);
             background: var(--color-surface);
             box-shadow: 0 0 0 4px rgba(200, 200, 200, 0.1);
@@ -130,14 +131,15 @@ export const Styled = {
             box-shadow: inset 3px 0 0 var(--color-primary);
         }
 
-        .initialBadge {
-            width: 36px;
-            height: 36px;
+        .thumbnailBadge {
+            width: 48px;
+            height: 48px;
             flex-shrink: 0;
-            border-radius: var(--radius-sm);
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
+            border-radius: var(--radius-sm);
             background: var(--color-surface-3);
             border: 1px solid var(--color-border);
             color: var(--color-text-primary);
@@ -152,13 +154,20 @@ export const Styled = {
                 box-shadow var(--transition-fast);
         }
 
-        .navLink:hover .initialBadge {
+        .thumbnailBadge img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .navLink:hover .thumbnailBadge {
             background: var(--color-surface-2);
             border-color: var(--color-border-light);
             transform: translateY(-1px);
         }
 
-        .navLink.active .initialBadge {
+        .navLink.active .thumbnailBadge {
             background: var(--color-primary);
             color: var(--color-text-inverse);
             border-color: var(--color-primary);
@@ -218,6 +227,7 @@ export const Styled = {
 
         html[data-theme="light"] & {
             .searchBox input:focus {
+                outline: none;
                 box-shadow: 0 0 0 4px rgba(100, 100, 100, 0.1);
             }
 
@@ -241,7 +251,7 @@ export const Styled = {
                     var(--color-surface);
             }
 
-            .navLink.active .initialBadge {
+            .navLink.active .thumbnailBadge {
                 box-shadow: 0 10px 24px rgba(100, 100, 100, 0.14);
             }
         }

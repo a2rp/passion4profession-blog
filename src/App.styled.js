@@ -37,251 +37,147 @@ export const Styled = {
         display: flex;
         background: transparent;
 
+        .menuOverlay {
+            position: absolute;
+            inset: 0;
+            z-index: 19;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            border: 0;
+            background: rgba(0, 0, 0, 0.48);
+            backdrop-filter: blur(5px);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            cursor: default;
+            transition:
+                opacity 240ms ease,
+                visibility 0s linear 240ms;
+        }
+
+        .menuOverlayVisible {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transition:
+                opacity 240ms ease,
+                visibility 0s;
+        }
+
         .menuSlider {
-            border-right: 1px solid var(--color-border);
-            flex: 0 0 320px;
-            width: 320px;
-            position: relative;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 20;
+            display: flex;
+            flex-direction: column;
+            width: min(380px, calc(100vw - 24px));
+            height: 100%;
             overflow: hidden;
-            transition: var(--transition-normal);
-            transition-property:
-                width, flex, border-color, background-color, box-shadow,
-                transform;
+            border-left: 1px solid var(--color-border);
             background:
-                linear-gradient(
-                    180deg,
-                    rgba(255, 255, 255, 0.02) 0%,
-                    rgba(255, 255, 255, 0.01) 100%
+                radial-gradient(
+                    420px 300px at 100% 0%,
+                    color-mix(in srgb, var(--color-primary) 10%, transparent),
+                    transparent 72%
                 ),
                 linear-gradient(
                     180deg,
                     var(--color-surface) 0%,
                     var(--color-surface-2) 100%
                 );
-            box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.02);
+            box-shadow: -24px 0 70px var(--color-shadow);
+            transform: translateX(105%);
+            visibility: hidden;
+            pointer-events: none;
+            transition:
+                transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
+                visibility 0s linear 300ms;
+        }
 
-            @media (max-width: 700px) {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 320px;
-                height: 100%;
-                z-index: 20;
-                box-shadow: 12px 0 36px var(--color-shadow);
-            }
+        .menuSlider.displayMenuSlider {
+            transform: translateX(0);
+            visibility: visible;
+            pointer-events: auto;
+            transition:
+                transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
+                visibility 0s;
+        }
 
-            .searchWrapper {
-                height: var(--header-height);
-                width: 320px;
-                padding: 8px 10px;
-                border-bottom: 1px solid var(--color-border);
-                background:
-                    linear-gradient(
-                        180deg,
-                        rgba(255, 255, 255, 0.02),
-                        rgba(255, 255, 255, 0.005)
-                    ),
-                    transparent;
+        .drawerHeader {
+            min-height: 78px;
+            padding: 14px 16px 14px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            border-bottom: 1px solid var(--color-border);
+            background: rgba(255, 255, 255, 0.018);
+        }
 
-                .searchInputHolder {
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    height: 100%;
-                }
+        .drawerHeading {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            min-width: 0;
+        }
 
-                .searchIcon {
-                    position: absolute;
-                    left: 12px;
-                    font-size: 16px;
-                    color: var(--color-text-muted);
-                    pointer-events: none;
-                    opacity: 0.95;
-                }
+        .drawerEyebrow {
+            color: var(--color-primary);
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+        }
 
-                .clearSearchButton {
-                    position: absolute;
-                    right: 8px;
-                    width: 30px;
-                    height: 30px;
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 999px;
-                    background: var(--color-surface);
-                    color: var(--color-text-secondary);
-                    border: 1px solid var(--color-border);
-                    cursor: pointer;
-                    transition:
-                        background var(--transition-fast),
-                        color var(--transition-fast),
-                        border-color var(--transition-fast),
-                        transform var(--transition-fast),
-                        box-shadow var(--transition-fast);
-                }
+        .drawerTitle {
+            color: var(--color-text-primary);
+            font-size: 16px;
+            font-weight: 800;
+        }
 
-                .clearSearchButton:hover {
-                    background: var(--color-surface-3);
-                    color: var(--color-text-primary);
-                    border-color: var(--color-border-light);
-                    box-shadow: 0 6px 16px var(--color-shadow);
-                }
+        .drawerCloseButton {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            background: var(--color-surface-2);
+            color: var(--color-text-secondary);
+            font-size: 20px;
+            cursor: pointer;
+            transition:
+                color var(--transition-fast),
+                border-color var(--transition-fast),
+                background var(--transition-fast),
+                transform var(--transition-fast);
+        }
 
-                .clearSearchButton:active {
-                    transform: scale(0.96);
-                }
+        .drawerCloseButton:hover {
+            color: var(--color-text-primary);
+            border-color: var(--color-border-light);
+            background: var(--color-surface-3);
+        }
 
-                input {
-                    width: 100%;
-                    height: 100%;
-                    padding: 10px 40px 10px 38px;
-                    background: var(--color-surface-2);
-                    border: 1px solid var(--color-border);
-                    border-radius: var(--radius-sm);
-                    color: var(--color-text-primary);
-                    outline: none;
-                    transition:
-                        border-color var(--transition-fast),
-                        background-color var(--transition-fast),
-                        color var(--transition-fast),
-                        box-shadow var(--transition-fast);
-                }
+        .drawerCloseButton:active {
+            transform: scale(0.96);
+        }
 
-                input::placeholder {
-                    color: var(--color-text-muted);
-                    opacity: 1;
-                }
+        .drawerNav {
+            min-height: 0;
+            flex: 1;
+        }
 
-                input:hover {
-                    border-color: var(--color-border-light);
-                }
-
-                input:focus {
-                    border-color: var(--color-primary);
-                    background: var(--color-surface);
-                    box-shadow: 0 0 0 4px rgba(200, 200, 200, 0.1);
-                }
-            }
-
-            .menuSliderInner {
-                height: calc(100% - var(--header-height));
-                overflow-y: auto;
-                width: 320px;
-                display: flex;
-                flex-direction: column;
-                background: transparent;
-            }
-
-            .menuLink {
-                display: flex;
-                align-items: flex-start;
-                gap: 12px;
-                padding: 14px 16px;
-                text-decoration: none;
-                color: var(--color-text-secondary);
-                border-bottom: 1px solid var(--color-border);
-                background: transparent;
-                transition:
-                    background var(--transition-fast),
-                    color var(--transition-fast),
-                    border-color var(--transition-fast),
-                    transform var(--transition-fast);
-            }
-
-            .menuLinkInitial {
-                width: 38px;
-                height: 38px;
-                border-radius: var(--radius-sm);
-                flex-shrink: 0;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                background: var(--color-surface-3);
-                border: 1px solid var(--color-border);
-                color: var(--color-text-primary);
-                font-size: 15px;
-                font-weight: 900;
-                line-height: 1;
-                transition:
-                    background var(--transition-fast),
-                    color var(--transition-fast),
-                    border-color var(--transition-fast),
-                    transform var(--transition-fast),
-                    box-shadow var(--transition-fast);
-                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-            }
-
-            .menuLinkContent {
-                min-width: 0;
-                display: flex;
-                flex-direction: column;
-                gap: 4px;
-            }
-
-            .menuLinkText {
-                color: inherit;
-                line-height: 1.35;
-                font-size: 14px;
-                font-weight: 700;
-            }
-
-            .menuLinkMeta {
-                color: var(--color-text-muted);
-                font-size: 12px;
-                line-height: 1.45;
-            }
-
-            .menuLink:hover {
-                background: rgba(255, 255, 255, 0.03);
-                color: var(--color-text-primary);
-                transform: translateX(2px);
-            }
-
-            .menuLink:hover .menuLinkInitial {
-                background: var(--color-surface);
-                border-color: var(--color-border-light);
-                transform: translateY(-1px);
-                box-shadow: 0 8px 18px var(--color-shadow);
-            }
-
-            .menuLink.active {
-                background:
-                    linear-gradient(
-                        90deg,
-                        rgba(200, 200, 200, 0.14),
-                        rgba(200, 200, 200, 0.03)
-                    ),
-                    var(--color-surface);
-                color: var(--color-text-primary);
-                border-bottom-color: var(--color-border-light);
-            }
-
-            .menuLink.active .menuLinkInitial {
-                background: var(--color-primary);
-                color: var(--color-text-inverse);
-                border-color: var(--color-primary);
-                box-shadow: 0 10px 24px rgba(200, 200, 200, 0.14);
-            }
-
-            &.hideMenuSlider {
-                flex: 0 0 0;
-                width: 0;
-                border-right: 0;
-                box-shadow: none;
-
-                @media (max-width: 700px) {
-                    transform: translateX(-100%);
-                }
-            }
-
-            &.displayMenuSlider {
-                flex: 0 0 320px;
-                width: 320px;
-
-                @media (max-width: 700px) {
-                    transform: translateX(0);
-                }
-            }
+        .drawerNav > aside {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+            background: transparent;
         }
 
         .contentWrapper {
@@ -424,53 +320,20 @@ export const Styled = {
         html[data-theme="light"] & {
             .menuSlider {
                 background:
-                    linear-gradient(
-                        180deg,
-                        rgba(255, 255, 255, 0.8) 0%,
-                        rgba(255, 255, 255, 0.62) 100%
+                    radial-gradient(
+                        420px 300px at 100% 0%,
+                        rgba(100, 100, 100, 0.08),
+                        transparent 72%
                     ),
                     linear-gradient(
                         180deg,
                         var(--color-surface) 0%,
                         var(--color-surface-2) 100%
                     );
-                box-shadow: inset -1px 0 0 rgba(23, 23, 23, 0.03);
+            }
 
-                @media (max-width: 700px) {
-                    box-shadow: 12px 0 36px var(--color-shadow);
-                }
-
-                .searchWrapper {
-                    background:
-                        linear-gradient(
-                            180deg,
-                            rgba(255, 255, 255, 0.7),
-                            rgba(255, 255, 255, 0.28)
-                        ),
-                        transparent;
-                }
-
-                .searchWrapper input:focus {
-                    box-shadow: 0 0 0 4px rgba(100, 100, 100, 0.1);
-                }
-
-                .menuLink:hover {
-                    background: rgba(23, 23, 23, 0.035);
-                }
-
-                .menuLink.active {
-                    background:
-                        linear-gradient(
-                            90deg,
-                            rgba(100, 100, 100, 0.12),
-                            rgba(100, 100, 100, 0.03)
-                        ),
-                        var(--color-surface);
-                }
-
-                .menuLink.active .menuLinkInitial {
-                    box-shadow: 0 10px 24px rgba(100, 100, 100, 0.14);
-                }
+            .drawerHeader {
+                background: rgba(255, 255, 255, 0.52);
             }
 
             .contentWrapper {
