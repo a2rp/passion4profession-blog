@@ -1,4 +1,4 @@
-import{c as o,j as r,k as a,S as l,l as c,F as t,m as d,n as s,o as n}from"./index-D4xq1CoW.js";const i={Wrapper:o.div`
+import{c as o,j as r,k as a,S as l,l as c,F as t,m as d,n as s,o as n}from"./index-BdrWH-1y.js";const i={Wrapper:o.div`
         width: 100%;
         color: var(--color-text-primary);
     `,HeroSection:o.section`
