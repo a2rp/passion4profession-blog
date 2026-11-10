@@ -24,17 +24,19 @@ A React and Vite knowledge blog for clear technical essays, computing notes, and
 
 ## Run locally
 
-\`\`\`bash
-npm install
+Requires Node.js 22.12+ or 24+. Install from the lockfile before starting the dev server:
+
+```bash
+npm ci
 npm run dev
-\`\`\`
+```
 
 Build and deploy:
 
-\`\`\`bash
+```bash
 npm run build
 npm run deploy
-\`\`\`
+```
 
 ## Live
 

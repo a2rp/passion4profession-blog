@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components -- These modules export route metadata with lazy component elements. */
 import React, { lazy } from "react";
 import { blogRegistry } from "./blogRegistry";
 
